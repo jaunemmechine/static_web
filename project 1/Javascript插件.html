@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>标签页</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#gn" data-toggle="tab">国内</a></li>
+        <li><a href="#gj" data-toggle="tab">国际</a></li>
+        <li><a href="#js" data-toggle="tab">军事</a></li>
+    </ul>
+    <div class="tab-content fade in">
+        <div id="gn" class="tab-pane active">国内国内国内</div>
+        <div id="gj" class="tab-pane">国际国际国际</div>
+        <div id="js" class="tab-pane">军事军事军事</div>
+    </div>
+    <h1>工具提示</h1>
+    <button  class="mybtn btn btn-primary"data-toggle="tooltip" data-placement="top" title="上提示">确定</button>
+    <button  class="mybtn btn btn-primary"data-toggle="tooltip" data-placement="bottom" title="下提示">确定</button>
+    <button  class="mybtn btn btn-primary"data-toggle="tooltip" data-placement="left" title="左提示">确定</button>
+    <button  class="mybtn btn btn-primary"data-toggle="tooltip" data-placement="right" title="右提示">确定</button>
+    <h1>弹出框</h1>
+    <button type="button" id="myalert" class="btn btn-danger"data-placement="top" data-toggle="popover" data-content="弹出框内容" title="弹出框标题">弹出框</button>
+    <h1>警告框</h1>
+    <div class="alert alert-danger alert-dismissible fade in">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+        <button type="button" class="btn btn-danger" data-dismiss="alert">关闭</button>
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+    </div>
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+    </div>
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+    </div>
+    <h1>模态框</h1>
+</div>
+<div class="modal">
+
+</div>
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    $(".mybtn").tooltip();
+    $("#myalert").popover();
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>

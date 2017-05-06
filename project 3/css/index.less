@@ -1,0 +1,141 @@
+@import "../less/bootstrap";
+body{
+  margin-top: 60px;
+  background: @body-bg;
+}
+.intel_logo{
+  display: inline-block;
+  width: 64px;
+  height: 43px;
+  margin-top: 3px;
+  background: url('../img/hdr-spr.png') 0 -512px no-repeat;
+}
+.intel{
+  background:@blue-dark;
+}
+
+#login{
+  background: #fff;
+  width: 400px;
+  height: 250px;
+  .form-group{
+    margin: 0px 20px;
+    h4{
+      margin-top: 20px;
+    }
+  }
+}
+
+.main{
+  background:@blue-dark;
+  color: @text-color;
+  h3{
+    color:@text-color-light ;
+  }
+  .row{
+    margin: 20px 0;
+    .branch{
+      background:@blue-std ;
+      box-shadow: 10px 10px 5px #005292;
+    }
+  }
+}
+
+.list{
+  padding-left: 0;
+  list-style: none;
+  li{
+    a{
+      color:@text-color-light ;
+    }
+  }
+  &:link{
+    color: #333;
+  }
+}
+
+.f1{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/social_sprite_smushed.png")0 -70px no-repeat;
+}
+.f2{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/social_sprite_smushed.png")0 -770px no-repeat;
+}
+/*.f3{
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  background: url("../img/hdr-spr.png")0 -427px no-repeat;
+}*/
+.left_img{
+  border-right:1px solid #fff;
+}
+
+.masked{
+  position: relative;
+  .mask{
+    position: absolute;
+    top:80%;
+    bottom:0;
+    left:0;
+    right: 0;
+    color: #fff;
+    overflow: hidden;
+    background: rgba(0,0,0,.5);
+    transition:top 0.5s linear;
+    .mask_text{
+      margin-left: 10px;
+    }
+    &:hover{
+      top:0px;
+    }
+
+  }
+}
+
+//媒体查询
+/*.screencolor{
+  @media screen {
+    color:blue;
+    @media (min-width: 768px) {
+      color: red;
+    }
+  }
+  @media tv {
+    color: black;
+  }
+}*/
+
+.masked_lg{
+  position:relative;
+  box-shadow: 10px 10px 5px #005292;
+  .mask_lg{
+    position: absolute !important;
+    top:55%;
+    bottom:0;
+    left: 0;
+    right:0;
+    color: #fff;
+    background: rgba(0,0,0,0);
+    .masklg_text{
+      margin-left: 30px;
+    }
+  }
+  @media (min-width: 320px) and (min-width: 768px) {
+    .mask_lg{
+      position: relative;
+    }
+    .masklg_text {
+      margin-top: 40px;
+    }
+  }
+
+}
+
+
+

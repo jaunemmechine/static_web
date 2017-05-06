@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div>
+    <div class="container">
+        <h1>手风琴</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel-group" id="panelParent">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#xyj" data-toggle="collapse" data-parent="#panelParent">西游记</a>
+                        </div>
+                        <div class="collapse" id="xyj">
+                            <div class="panel-body" >
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur consequatur enim fugiat laboriosam, maxime minus omnis porro repudiandae. Dolorem dolorum ducimus earum eligendi ipsam iste, natus nostrum quibusdam.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#hlm" data-toggle="collapse" data-parent="#panelParent">红楼梦</a>
+                        </div>
+                        <div class="collapse" id="hlm">
+                            <div class="panel-body" >
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur consequatur enim fugiat laboriosam, maxime minus omnis porro repudiandae. Dolorem dolorum ducimus earum eligendi ipsam iste, natus nostrum quibusdam.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#sg" data-toggle="collapse" data-parent="#panelParent">三国演义</a>
+                        </div>
+                        <div class="collapse" id="sg">
+                            <div class="panel-body" >
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur consequatur enim fugiat laboriosam, maxime minus omnis porro repudiandae. Dolorem dolorum ducimus earum eligendi ipsam iste, natus nostrum quibusdam.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a href="#shz" data-toggle="collapse" data-parent="#panelParent">水浒传</a>
+                        </div>
+                        <div class="collapse" id="shz">
+                            <div class="panel-body" >
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur consequatur enim fugiat laboriosam, maxime minus omnis porro repudiandae. Dolorem dolorum ducimus earum eligendi ipsam iste, natus nostrum quibusdam.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <h1>模态框</h1>
+        <hr/>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">添加用户</button>
+        <h1>折叠 collapse</h1>
+        <hr>
+        <a href="#" data-toggle="collapse" data-target="#myCollapse">点我</a>
+        <br/><br/>
+        <div class="collapse" id="myCollapse">
+            <img src="1.jpg">
+        </div>
+        <button class="btn btn-danger" data-toggle="collapse" data-target="#myAlert" >详情</button>
+        <div class="collapse in" id="myAlert">
+            <div class="alert alert-warning text-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci assumenda beatae dolorem eligendi enim est explicabo facilis fuga impedit libero magnam minus nemo nesciunt qui quo, sapiente temporibus, voluptatibus!
+            </div>
+        </div>
+    </div>
+    <!--模态框一般放在代码的最后-->
+    <!--半透明设置-->
+    <div class="modal fade" id="mymodal" data-backdrop="static" tabindex="-1"   data-keyboard="false">
+        <!--模态框 长宽高设置-->
+        <div class="modal-dialog modal-lg">
+            <!--模态框的内容容器-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    添加用户
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-offset-2 col-sm-8">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label  for="uname">用户名</label>
+                                    <input type="text" class="form-control" id="uname">
+                                </div>
+                                <div class="form-group">
+                                    <label  for="pwd">密码：</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >注册</button>
+                    <button type="reset" class="btn btn-default" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>

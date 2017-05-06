@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <!--logo-->
+            <a href="#" class="navbar-brand">零壹学院</a>
+            <!--响应式按钮-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="Collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+                <li><a href="user.html"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>内容管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span>标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">admin</a></li>
+                        <li><a href="#">tom</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4><strong>网站程序有漏洞，急需修复！</strong></h4>
+        <span>当前版本程序(v1.22)存在严重安全问题，容易造成攻击，请及时修复！</span><br/><br/>
+        <button type="button" class="btn btn-danger">立即修复</button>
+        <button type="button" class="btn btn-default">稍后处理</button>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站数据统计</div>
+                <div class="panel-body">
+                    <table class="table table-condensed">
+                        <thead>
+                        <tr>
+                            <th>统计项目</th>
+                            <th>昨日</th>
+                            <th>今日</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>注册会员</td>
+                            <td>20</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>登录会员</td>
+                            <td>320</td>
+                            <td>461</td>
+                        </tr>
+                        <tr>
+                            <td>今日发帖</td>
+                            <td>620</td>
+                            <td>440</td>
+                        </tr>
+                        <tr>
+                            <td>今日跟贴</td>
+                            <td>320</td>
+                            <td>540</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站热帖</div>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>职业教育，效果和就业为王</a><span class="pull-right">2016/07/09</span></li>
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>工资翻翻？辞职也能学到新技能</a><span class="pull-right">2016/07/09</span></li>
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>初探互联网时代及物联网感知端的开发</a><span class="pull-right">2016/07/09</span></li>
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>深入浅出nodejs</a><span class="pull-right">2016/07/09</span></li>
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span>Bootstrap技术详情</a><span class="pull-right">2016/07/09</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">今天推荐</div>
+                <div class="panel-body">
+                    <div class="carousel slide" data-ride="carousel" data-interval="3000" id="mycarousel">
+                        <ul class="carousel-indicators">
+                            <li data-slide-to="0" data-target="#mycarousel" class="active"></li>
+                            <li data-slide-to="1" data-target="#mycarousel"></li>
+                            <li data-slide-to="2" data-target="#mycarousel"></li>
+                            <li data-slide-to="3" data-target="#mycarousel"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/1.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="img/2.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="img/3.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="img/4.jpg">
+                            </div>
+                        </div>
+                        <a href="#mycarousel" class="carousel-control left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#mycarousel" class="carousel-control right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">服务器状态</div>
+                <div class="panel-body">
+                    <span>内存使用率：40%</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+
+                        </div>
+                    </div>
+                    <span>数据库使用率：20%</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                    <span>磁盘使用率：60%</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+                    <span>CPU使用率：80%</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">团队留言板</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="media well">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/One_Piece_anime_boy.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">带头大哥</h4>
+                            <p>大哥，今晚把网站程序升级一下哈，现在系统有漏洞，安全起见。</p>
+                        </div>
+                    </div>
+
+                    <div class="media well">
+
+                        <div class="media-body text-right">
+                            <h4 class="media-heading">街角咖啡</h4>
+                            <p>收到今晚2点准时升级</p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                                <img class="media-object" src="img/Vampire_Knight_boy.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="media well">
+
+                        <div class="media-body text-right">
+                            <h4 class="media-heading">街角咖啡</h4>
+                            <p>请兔兔先生在站点发布停机升级公告啊！</p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                                <img class="media-object" src="img/Vampire_Knight_boy.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="media well">
+                        <div class="media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="img/Rabbit.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">兔兔</h4>
+                            <p>收到</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-5">
+                    <strong>输入留言内容</strong>
+                    <textarea rows="10" cols="40" class="form-control" placeholder="请输入留言板内容"></textarea><br/>
+                    <button type="button" class="btn btn-default">留言</button><br/><br/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">团队联系手册</div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item"><label>站长：（带头大哥）：</label><span class="glyphicon glyphicon-phone"></span>15975377341</li>
+                                <li class="list-group-item"><label>后端：（街角咖啡）：</label><span class="glyphicon glyphicon-phone"></span>15975377341</li>
+                                <li class="list-group-item"><label>前端：（薇薇一笑）：</label><span class="glyphicon glyphicon-phone"></span>15975377341</li>
+                                <li class="list-group-item"><label>推广：（带头大哥）：</label><span class="glyphicon glyphicon-phone"></span>15975377341<br/>
+                                    <span class="glyphicon glyphicon-phone-alt"></span>0731-8888888
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>

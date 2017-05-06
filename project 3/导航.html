@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand intel_logo" href="#"></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="glyphicon glyphicon-search navbar-toggle"></span>
+        </div>
+        <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">菜单
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu mydropdown-menu">
+                        <li><a href="#">英特尔产品</a></li>
+                        <li class="divider dropdown-divider-bg"></li>
+                        <li><a href="#">热点话题</a></li>
+                        <li class="divider dropdown-divider-bg"></li>
+                        <li><a href="#">用户</a></li>
+                        <li class="divider dropdown-divider-bg"></li>
+                        <li><a href="#">购买</a></li>
+                        <li class="divider dropdown-divider-bg"></li>
+                        <li><a href="#">产品支持</a></li>
+                        <li class="divider dropdown-divider-bg"></li>
+                        <li><a href="#">关于英特尔</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="dropdown navbar-right">
+                <a href="#" class="navbar-text navbar-link " data-toggle="dropdown">登录</a>
+                <ul class="dropdown-menu">
+                    <li id="login">
+                        <div class="form-group">
+                            <h4 class="lead">登录</h4>
+                            <span>你是否在英特尔工作？</span>
+                            <input type="text" class="form-control" placeholder="用户名"><br/>
+                            <input type="password" class="form-control" placeholder="密码"/>
+                            <span>您登录表明您同意我们的服务条款</span><br/>
+                            <button type="button" class="btn btn-primary">登录</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="navbar-text navbar-link navbar-right">China(简体中文)<span class="glyphicon glyphicon-globe"></span></a>
+            <form class="navbar-right navbar-form">
+                <div class="input-group has-feedback">
+                    <label class="sr-only" for="textsearch"></label>
+                    <input type="text" id="textsearch" class="form-control" placeholder="search">
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+            </form>
+            <span class="navbar-text navbar-right">|</span>
+            <a href="#" class="navbar-link navbar-text navbar-right">内容查找</a>
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>

@@ -1,0 +1,17 @@
+@media (min-width: 320px) and (max-width: 667px) {
+  .mask_lg {
+    position: relative !important;
+  }
+  .masklg_text {
+    margin-top: 10%;
+  }
+  .masklg_text h2 {
+    font-size: 18px;
+  }
+  .masklg_text h5 {
+    font-size: 5px;
+  }
+  .masklg_text .btn {
+    font-size: 5px;
+  }
+}

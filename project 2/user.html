@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <!--logo-->
+            <a href="index.html" class="navbar-brand">零壹学院</a>
+            <!--响应式按钮-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="Collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>用户管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>内容管理</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tags"></span>标签管理</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">admin</a></li>
+                        <li><a href="#">tom</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-sm-2">
+           <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="user.html">用户管理</a></li>
+            <li><a href="search.html">用户搜索</a></li>
+            <li><a href="user.html">添加用户</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-10">
+        <div>
+            <span class="lead">用户管理</span>
+
+            <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#mymodal">添加用户</button>
+            <hr/>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#userList" data-toggle="tab">用户列表</a></li>
+        </ul>
+        <br>
+        <!--<div class="tab-content fade in">-->
+            <!--<div id="userList" class="tab-pane active">-->
+                <table class="table">
+                    <!--<thead>-->
+                    <tr>
+                        <th>ID</th>
+                        <th>用户名</th>
+                        <th>邮箱</th>
+                        <th>操作</th>
+                    </tr>
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    <tr>
+                        <td>1</td>
+                        <td>张三</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李四</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>王五</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>张三</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>李四</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>王五</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>张三</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>王五</td>
+                        <td>111@qq.com</td>
+                        <td class="dropdown">
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                                操作
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">修改</a></li>
+                                <li><a href="#">删除</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--</tbody>-->
+                </table>
+            </div>
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="modal fade" id="mymodal" data-backdrop="static" tabindex="-1"   data-keyboard="false">
+    <!--模态框 长宽高设置-->
+    <div class="modal-dialog">
+        <!--模态框的内容容器-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                添加用户
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <form action="#">
+                            <div class="form-group">
+                                <label  for="name">用户名</label>
+                                <input type="text" class="form-control" id="name" placeholder="请输入用户名">
+                            </div>
+                            <div class="form-group">
+                                <label  for="pwd">请输入密码</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="请输入密码">
+                            </div>
+                            <div class="form-group">
+                                <label  for="pwd2">确认密码</label>
+                                <input type="password" class="form-control" id="pwd2" placeholder="确认密码">
+                            </div>
+                            <div class="form-group">
+                                <label  for="email">请输入邮箱</label>
+                                <input type="password" class="form-control" id="email" placeholder="输入邮箱">
+                            </div>
+                            <div class="form-group">
+                                <label  for="users">用户组</label>
+                                <input type="password" class="form-control" id="users" placeholder="限制会员">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="reset" class="btn btn-primary" >关闭</button>
+                <button type="submit" class="btn btn-default" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>

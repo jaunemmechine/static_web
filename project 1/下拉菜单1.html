@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--导航条-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!--logo-->
+            <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-education"></span></a>
+            <!--响应式按钮-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="Collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">主页</a></li>
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">产品</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">商品评价
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"></a>好评</li>
+                        <li><a href="#"></a>中评</li>
+                        <li><a href="#"></a>差评</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="navbar-text navbar-right navbar-link">注册</a>
+            <span class="navbar-text navbar-right">|</span>
+            <button type="button" class="btn btn-success navbar-btn navbar-right">登录</button>
+            <form class="navbar-right navbar-form">
+                <div class="input-group has-feedback">
+                    <label class="sr-only" for="textsearch"></label>
+                    <input type="text" id="textsearch" class="form-control" placeholder="search">
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    <!--<div class="input-group-btn">
+                        <button class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>-->
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <h2>下拉菜单</h2>
+       <div class="input-group">
+             <div class="input-group-btn">
+                  <button type="button" class="btn btn-default" data-toggle="dropdown">
+                        下拉菜单
+                     <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li><a href="#">Javascript</a></li>
+                    </ul>
+             </div>
+                <input type="text" class="form-control"name="uesername">
+       </div>
+    <br>
+    <h2>导航</h2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#main" data-toggle="tab">首页</a></li>
+        <li><a href="#d1"  data-toggle="tab">HTML5</a></li>
+        <li><a href="#d2" data-toggle="tab">CSS3</a></li>
+        <li><a href="#d3" data-toggle="tab">javascript</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">jQuery
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#"></a>事件</li>
+                <li><a href="#"></a>选择器</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" id="main">首页首页首页首页</div>
+        <div class="tab-pane" id="d1">HTML5HTML5HTML5</div>
+        <div class="tab-pane" id="d2">CSS3CSS3CSS3</div>
+        <div class="tab-pane" id="d3">javascriptjavascript</div>
+    </div>
+</div>
+</body>
+<script src="../bootstrap-3.3.7/dist/js/jquery.js"></script>
+<script src="../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "../bootlint-master/dist/browser/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</html>
